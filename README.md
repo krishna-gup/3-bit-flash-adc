@@ -10,7 +10,7 @@ This type of ADC is also known as a high speed ADC.
 
 # Reference Circuit Diagram
 
-<img width="294" alt="refCkt" src="https://user-images.githubusercontent.com/83169108/157313934-3f5dcabd-6086-4104-95fe-174a927d7a5c.png">
+<img width="294" alt="refCkt - Copy" src="https://user-images.githubusercontent.com/83169108/157314921-3643ba3e-ce63-4ece-acb6-060004fa8917.png">
 
 # Circuit Description
 
