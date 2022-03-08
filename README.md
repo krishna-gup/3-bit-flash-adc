@@ -97,13 +97,30 @@ endmodule
 
 ```
 
-Makerchip Output:
+Makerchip Output for Different Inputs:
 
 ![makerchip_waveform1](https://user-images.githubusercontent.com/83169108/157294692-c628c4a0-434b-498b-9a97-c11448761b6e.jpg)
 
 ![makerchip_waveform2](https://user-images.githubusercontent.com/83169108/157294721-f585183a-9a43-422a-b82f-b1b7fa7f6b49.jpg)
 
+# Author
 
+Krishna Gupta
+Pre-Final Year
+Bachelors of Technology, Electronics and Communications Engineering
+Jaypee Institute of Information Technology, Sector 62, Noida
+
+# Acknowledgements
+
+- FOSSEE
+- Indian Institute of Technology, Bombay
+- Kunal Ghosh, Co-Founder, VLSI System Design
+- Sumanto Kar, eSim Team, IIT-B
+
+# References
+
+- Triveni Kalita, Basab Das “A 4-bit Quantum Voltage Comparator based Flash ADC for Low Noise Applications”13 Oct 2016 IEEE
+- Afreen R. Kerur, et. Al, “Design and Analysis of low power 4-bit Flash ADC using Quantum Voltage Comparator”, VIT TN
 
 
 
