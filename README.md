@@ -10,6 +10,8 @@ This type of ADC is also known as a high speed ADC.
 
 # Reference Circuit Diagram
 
+<img width="294" alt="refCkt" src="https://user-images.githubusercontent.com/83169108/157313934-3f5dcabd-6086-4104-95fe-174a927d7a5c.png">
+
 # Circuit Description
 
 This type of ADC can be divided into three parts, one being the Voltage Divider, other two being the comparator and the encoder respectively. We supply the maximum voltage as a reference input to our voltage divider network, which gets divided at each and every resistor. Keeping in mind that all resistors have a set value (1k), the voltage gets equally divided into 8 parts, each part being in ratio of each other, like 2Vr/8, 3Vr/8 and so on (Vr being the Reference Voltage). The potential at each point is fed into a comparator which in this case is an operational amplifier, which gives me the output either being +VCC or -VSS, depending upon the comparision. That output is fed into a priority encoder, which encodes it into a digital output.
