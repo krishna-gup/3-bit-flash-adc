@@ -1,0 +1,37 @@
+* C:\Users\krish\Documents\eSim\8_BIT_ADC\8_BIT_ADC.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 03/09/22 18:56:45
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ krishna_prioenco		
+X6  ? Net-_R1-Pad2_ VIN GND ? IN7 VDD ? lm_741		
+X1  ? Net-_R2-Pad2_ VIN GND ? IN6 VDD ? lm_741		
+X7  ? Net-_R3-Pad2_ VIN GND ? IN5 VDD ? lm_741		
+X2  ? Net-_R4-Pad2_ VIN GND ? IN4 VDD ? lm_741		
+X4  ? Net-_R5-Pad2_ VIN GND ? IN3 VDD ? lm_741		
+X5  ? Net-_R7-Pad2_ VIN GND ? IN1 VDD ? lm_741		
+U2  IN7 IN6 IN5 IN4 IN3 IN2 IN1 IN0 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ adc_bridge_8		
+U3  Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_U1-Pad11_ D0 D1 D2 dac_bridge_3		
+U6  D0 plot_v1		
+U5  D1 plot_v1		
+U4  D2 plot_v1		
+R1  VREF Net-_R1-Pad2_ 1k		
+R2  Net-_R1-Pad2_ Net-_R2-Pad2_ 1k		
+R3  Net-_R2-Pad2_ Net-_R3-Pad2_ 1k		
+R4  Net-_R3-Pad2_ Net-_R4-Pad2_ 1k		
+R5  Net-_R4-Pad2_ Net-_R5-Pad2_ 1k		
+R6  Net-_R5-Pad2_ Net-_R6-Pad2_ 1k		
+R7  Net-_R6-Pad2_ Net-_R7-Pad2_ 1k		
+R8  Net-_R7-Pad2_ Net-_R16-Pad1_ 1k		
+VDD1  VDD GND 16		
+VIN1  VIN GND 2.5		
+v1  VREF GND 32		
+X8  ? Net-_R16-Pad1_ VIN GND ? IN0 VDD ? lm_741		
+R16  Net-_R16-Pad1_ GND 1k		
+X3  ? Net-_R6-Pad2_ VIN GND ? IN2 VDD ? lm_741		
+U7  VIN plot_v1		
+
+.end

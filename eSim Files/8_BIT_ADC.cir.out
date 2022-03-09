@@ -1,0 +1,49 @@
+* c:\users\krish\documents\esim\8_bit_adc\8_bit_adc.cir
+
+.include lm_741.sub
+* u1  net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ krishna_prioenco
+x6 ? net-_r1-pad2_ vin gnd ? in7 vdd ? lm_741
+x1 ? net-_r2-pad2_ vin gnd ? in6 vdd ? lm_741
+x7 ? net-_r3-pad2_ vin gnd ? in5 vdd ? lm_741
+x2 ? net-_r4-pad2_ vin gnd ? in4 vdd ? lm_741
+x4 ? net-_r5-pad2_ vin gnd ? in3 vdd ? lm_741
+x5 ? net-_r7-pad2_ vin gnd ? in1 vdd ? lm_741
+* u2  in7 in6 in5 in4 in3 in2 in1 in0 net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ adc_bridge_8
+* u3  net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ d0 d1 d2 dac_bridge_3
+* u6  d0 plot_v1
+* u5  d1 plot_v1
+* u4  d2 plot_v1
+r1  vref net-_r1-pad2_ 1k
+r2  net-_r1-pad2_ net-_r2-pad2_ 1k
+r3  net-_r2-pad2_ net-_r3-pad2_ 1k
+r4  net-_r3-pad2_ net-_r4-pad2_ 1k
+r5  net-_r4-pad2_ net-_r5-pad2_ 1k
+r6  net-_r5-pad2_ net-_r6-pad2_ 1k
+r7  net-_r6-pad2_ net-_r7-pad2_ 1k
+r8  net-_r7-pad2_ net-_r16-pad1_ 1k
+vdd1  vdd gnd 16
+vin1  vin gnd 2.5
+v1  vref gnd 32
+x8 ? net-_r16-pad1_ vin gnd ? in0 vdd ? lm_741
+r16  net-_r16-pad1_ gnd 1k
+x3 ? net-_r6-pad2_ vin gnd ? in2 vdd ? lm_741
+* u7  vin plot_v1
+a1 [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ ] u1
+a2 [in7 in6 in5 in4 in3 in2 in1 in0 ] [net-_u1-pad1_ net-_u1-pad2_ net-_u1-pad3_ net-_u1-pad4_ net-_u1-pad5_ net-_u1-pad6_ net-_u1-pad7_ net-_u1-pad8_ ] u2
+a3 [net-_u1-pad9_ net-_u1-pad10_ net-_u1-pad11_ ] [d0 d1 d2 ] u3
+* Schematic Name:                             krishna_prioenco, NgSpice Name: krishna_prioenco
+.model u1 krishna_prioenco(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+* Schematic Name:                             adc_bridge_8, NgSpice Name: adc_bridge
+.model u2 adc_bridge(in_low=2 in_high=4 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+* Schematic Name:                             dac_bridge_3, NgSpice Name: dac_bridge
+.model u3 dac_bridge(out_low=0.0 out_high=5.0 out_undef=0.5 input_load=1.0e-12 t_rise=1.0e-9 t_fall=1.0e-9 ) 
+.dc VIN1 0e-00 32e-00 0.4e-00
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(d0) v(d1)+6 v(d2)+12 v(vin)+18
+.endc
+.end
