@@ -2,6 +2,21 @@
 
 # Table of Contents
 
+
+- [Abstract](https://github.com/krishna-gup/3-bit-flash-adc#abstract)
+- [Reference Circuit](https://github.com/krishna-gup/3-bit-flash-adc#reference-circuit-diagram)
+- [Circuit Description](https://github.com/krishna-gup/3-bit-flash-adc#circuit-description)
+- [Reference Circuit and Output](https://github.com/krishna-gup/beta-multiplier/blob/main/README.md#reference-circuit)
+- [EDA Tools Used](https://github.com/krishna-gup/3-bit-flash-adc#eda-tools-used)
+- [Verilog Code of Priority Encoder](https://github.com/krishna-gup/3-bit-flash-adc#verilog-code-of-priority-encoder)
+- [Makerchip Simulation](https://github.com/krishna-gup/3-bit-flash-adc#makerchip-simulation-of-priority-encoder)
+- [Schematic](https://github.com/krishna-gup/3-bit-flash-adc#implemented-schematic)
+- [Netlist](https://github.com/krishna-gup/3-bit-flash-adc#netlist)
+- [Output Waveforms](https://github.com/krishna-gup/3-bit-flash-adc#output-waveform)
+- [Author](https://github.com/krishna-gup/3-bit-flash-adc#author)
+- [Acknowledgements](https://github.com/krishna-gup/3-bit-flash-adc#acknowledgements)
+- [References](https://github.com/krishna-gup/3-bit-flash-adc#references)
+
 # Abstract
 
 The world around us is analog, which includes all signals like sound, temperature, etc. For us to interpret these signals and work on them, we need to convert them into digital and then perform various functions on them. Converting analog signals into digital has multiple advantages, such as better noise rejection, easier to transmit, and many more. Hence, ADC (Analog to Digital Converters) is an important part of every integrated or front-end circuit.
@@ -181,8 +196,8 @@ D0 (LSB) is in BLUE
 
 # Author
 
-Krishna Gupta
-Pre-Final Year
+Krishna Gupta,
+Pre-Final Year,
 Bachelors of Technology, Electronics and Communications Engineering
 Jaypee Institute of Information Technology, Sector 62, Noida
 
