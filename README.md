@@ -107,7 +107,7 @@ Makerchip Output for Different Inputs:
 
 # Implemented Schematic
 
-![impl](https://user-images.githubusercontent.com/83169108/157449479-fa35e9ff-bb3f-47e5-84fa-096f95e57355.jpg)
+![impl](https://user-images.githubusercontent.com/83169108/157451208-73cce9cc-5c1a-4703-a7cc-1bb6b220eca5.jpg)
 
 I have implemented the reference circuit, using 8 LM741 Operational Amplifiers, a resistive ladder comprising of 1k resistors, and my implemented Priority Encoder.
 
